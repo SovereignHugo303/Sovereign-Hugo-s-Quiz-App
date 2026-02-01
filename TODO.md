@@ -1,0 +1,3 @@
+- [x] Create index.html with HTML structure including intro screen, question display, options, buttons, progress, results, footer.
+- [x] Create index.css with dark theme, responsive design, transitions, accessibility features.
+- [x] Create index.js with questions data, randomization, navigation, scoring, results, restart logic.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Hugo's Quiz App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+    <div id="app">
+        <!-- Intro Screen -->
+        <div id="intro-screen" class="screen active">
+            <div class="intro-content">
+                <div class="icon">🧠</div>
+                <h1>Sovereign Hugo's Quiz App</h1>
+                <p>Test your knowledge with this interactive quiz!</p>
+                <button id="start-btn" class="btn primary">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-container">
+                <div id="progress" class="progress">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+                <div id="question-container" class="question-container">
+                    <h2 id="question-text"></h2>
+                    <div id="options" class="options"></div>
+                </div>
+                <div class="buttons">
+                    <button id="next-btn" class="btn secondary" disabled>Next</button>
+                    <button id="submit-btn" class="btn primary" style="display: none;">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-container">
+                <h2>Quiz Complete!</h2>
+                <div id="score-display" class="score-display"></div>
+                <div id="answers-review" class="answers-review"></div>
+                <button id="restart-btn" class="btn primary">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Sovereign Hugo</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
